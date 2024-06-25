@@ -125,7 +125,7 @@ const DesignConfigurator = ({
       )
 
       const base64 = canvas.toDataURL()
-      const base64Data = base64.split(',')[1]
+      const base64Data = base64.split(',')[1] //untuk menghapus base64, hasil dari variable base64
 
       const blob = base64ToBlob(base64Data, 'image/png')
       const file = new File([blob], 'filename.png', { type: 'image/png' })
@@ -185,6 +185,7 @@ const DesignConfigurator = ({
             width: imageDimensions.width / 4,
           }}
           onResizeStop={(_, __, ref, ___, { x, y }) => {
+            //0,-2 karena hasil nya cth : 50px(hapus pxnya)
             setRenderedDimension({
               height: parseInt(ref.style.height.slice(0, -2)),
               width: parseInt(ref.style.width.slice(0, -2)),

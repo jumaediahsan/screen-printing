@@ -42,6 +42,6 @@ export function constructMetadata({
       creator: '@ahsanjumaedi',
     },
     icons,
-    metadataBase: new URL("https://screen-printing-amber.vercel.app/")
+    metadataBase: new URL("https://screen-printing-he3ufstar-ahsan-jumaedis-projects.vercel.app/")
   }
 }

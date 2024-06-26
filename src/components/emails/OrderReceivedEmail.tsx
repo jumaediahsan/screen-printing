@@ -26,7 +26,7 @@ const OrderReceivedEmail = ({
   const baseUrl =
     process.env.NODE_ENV === 'development'
       ? 'http://localhost:3000'
-      : 'https://screen-printing-amber.vercel.app'
+      : 'https://screen-printing-he3ufstar-ahsan-jumaedis-projects.vercel.app'
 
   return (
     <Html>
